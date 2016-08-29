@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "G:\\MyProject\\DYGiftTalk\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "G:\\MyProject\\DYGiftTalk\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "G:\\MyProject\\DYGiftTalk\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "G:\\MyProject\\DYGiftTalk\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "G:\\MyProject\\GiftTalk\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "G:\\MyProject\\GiftTalk\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "G:\\MyProject\\GiftTalk\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "G:\\MyProject\\GiftTalk\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    }
+]

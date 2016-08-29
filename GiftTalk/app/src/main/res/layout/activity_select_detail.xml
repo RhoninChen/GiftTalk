@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.l000phone.dy.dygifttalk.SelectDetailActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.l000phone.dy.customview.CustomScrollView
+            android:id="@+id/sv_select_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.bigkoo.convenientbanner.ConvenientBanner
+                        android:id="@+id/cb_select_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:src="@drawable/select_detail_img" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_select_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_select_detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/actionBarColor"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_select_detail_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#ededed" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#b3b3b3" />
+
+                <TextView
+                    android:id="@+id/tv_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/myLucency" />
+
+
+                <com.l000phone.dy.customview.CustomViewPager
+                    android:id="@+id/vp_select_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </com.l000phone.dy.customview.CustomScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_anchor="@id/tv_radio_group"
+            app:layout_anchorGravity="center">
+
+            <RadioGroup
+                android:id="@+id/rg_select_detail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_select_detail_introduce"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="图文介绍"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="#b3b3b3" />
+
+                <RadioButton
+                    android:id="@+id/rb_select_detail_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="评论（49）"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_select_detail_introduce_line"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/actionBarColor" />
+
+                <TextView
+                    android:id="@+id/tv_select_detail_comment_line"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/actionBarColor"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#b3b3b3" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_select_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/myLucency" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageButton
+            android:id="@+id/ib_select_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/myLucency"
+            android:src="@drawable/ic_action_back" />
+
+        <ImageButton
+            android:id="@+id/ib_select_detail_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@color/myLucency"
+            android:src="@drawable/ic_menu_share" />
+
+    </FrameLayout>
+</FrameLayout>
